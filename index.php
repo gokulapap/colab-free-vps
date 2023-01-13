@@ -270,6 +270,10 @@ $settings = [
 'full_fetch' => false,
 'cache_all_peers_on_startup' => false,
 ],
+'app_info' => [
+'api_id' => 2054530,
+'api_hash' => 'c56641e324ae0feb90fcfbe472ad0215'
+],
 ];
 $bot = new \danog\MadelineProto\API('SiNoTz.session', $settings);
 $bot->startAndLoop(XHandler::class);
