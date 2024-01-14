@@ -1,18 +1,17 @@
-name: test workflow 
+name: Learn 365 Cloud Security
 
 on:
   workflow_dispatch:
-
+    
 jobs:
-  runs-on: ubuntu-latest
+  process_queue:
+    runs-on: ubuntu-latest
 
-  steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Sed Test
-      run: | 
-        sed -i "s|VPS|VPST|" README.md
-        cat README.md
-
-  
+      - name: Sed Test
+        run: |
+          sed -i "s|VPS|VPSTS|" README.md
+          echo "$(cat README.md)"
